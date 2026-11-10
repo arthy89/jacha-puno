@@ -103,6 +103,9 @@ server {
 }
 ```
 
+> Ya creados en el repositorio, junto con un `.dockerignore` que deja fuera de la
+> imagen los archivos sin uso listados arriba (siguen en el repo, no se borran).
+
 Prueba opcional en local: `docker build -t jacha-puno . && docker run --rm -p 8080:80 jacha-puno`
 y abre http://localhost:8080.
 

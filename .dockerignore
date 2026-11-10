@@ -1,0 +1,13 @@
+# Solo se necesitan Dockerfile, nginx.conf y dist/
+.git
+.openai
+Caddyfile.ejemplo
+*.md
+
+# Archivos de dist/ que ninguna página usa (se conservan en el repo)
+dist/assets/muestra-jacha-puno.pdf
+dist/assets/muestra-revisada.pdf
+dist/assets/modalidades-patrocinio.docx
+dist/assets/presupuesto-y-anexos.docx
+dist/assets/lago-panoramica-barra.webp
+dist/assets/totora-y-tinta.png
