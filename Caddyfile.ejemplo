@@ -1,0 +1,4 @@
+revista.tudominio.pe {
+    root * /var/www/jacha-puno
+    file_server
+}
