@@ -69,7 +69,7 @@ de los PDF es el principal factor al dimensionar la cuota de transferencia.
 `Dockerfile`:
 
 ```dockerfile
-FROM nginx:1.27-alpine
+FROM nginx:1.30-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY dist/ /usr/share/nginx/html/
 EXPOSE 80
@@ -81,6 +81,7 @@ EXPOSE 80
 server {
     listen 80;
     server_name _;
+    server_tokens off;
     root /usr/share/nginx/html;
     index index.html;
 
@@ -103,6 +104,9 @@ server {
 }
 ```
 
+> Rama estable de nginx (1.30.x): al reconstruir recibe los parches de
+> seguridad de esa rama. `server_tokens off` oculta la versión exacta.
+>
 > Ya creados en el repositorio, junto con un `.dockerignore` que deja fuera de la
 > imagen los archivos sin uso listados arriba (siguen en el repo, no se borran).
 
