@@ -3,7 +3,7 @@
 Copia del repositorio, revisión 7f083df. El sitio está listo en `dist/`.
 HTML, CSS y JavaScript nativo, con Urbanist, imágenes, QR y documentos locales.
 El README original conserva notas históricas. Las tarifas vigentes en esta copia
-están en `dist/app.js`: S/ 250, 450, 650 y 900.
+están en `dist/app.js`: S/ 200, 360, 510 y 800 (tarifario 2026).
 
 ## Probar localmente
 
